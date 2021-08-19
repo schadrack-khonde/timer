@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root{
+    /* Primary*/
+
+--Grayish-blue: hsl(237, 18%, 59%);
+--Soft-red: hsl(345, 95%, 68%);
+
+ /*Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Dark-desaturated-blue: hsl(236, 21%, 26%);
+--Very-dark-blue: hsl(235, 16%, 14%);
+--mostly-black-blue: hsl(234, 17%, 12%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    Font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+}
+main{
+  background-image: url("./images/bg-stars.svg");
+  background-color: var(--Very-dark-blue);
+}
+.launch{
+    height: 60vh;
+    text-align: center;
+    padding-top: 8rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--White);
+    padding-bottom: 3rem;
+    width: 70%;
+    margin: auto;
+}
+.content > div{
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 9px;
+    padding: 2rem;
+    margin: 0 0.4rem;
+    box-shadow: var(--Very-dark-blue) 0px 20px 30px -10px;
+
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 92% 49%, 100% 60%, 100% 100%, 0 100%, 0 60%, 8% 48%, 0 35%);
+}
+.content h1{
+    color: var(--Soft-red);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.content p{
+    padding-top: 0.8rem;
+    color: var(--Grayish-blue);
+    font-size: 0.8rem;
+}
+@media  only screen and(min-width: 768px) {
+    .welcome{
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: var(--White);
+        padding-bottom: 3rem;
+        width: 100%;
+    }
+}
+.footer {
+    height: 40vh;
+    background-image: url("./images/pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    
+}
+ul{list-style: none;}
+a{text-decoration: none; cursor: pointer;}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.links li {
+    padding: 0 1.2rem;
+}
